@@ -32,14 +32,14 @@ function initialize {
 }
 
 function upload_assets {
-  git clone --quiet --depth 1 "git@github.com:tldr-pages/tldr-pages.github.io.git" "$SITE_HOME"
+  git clone --quiet --depth 1 "git@github.com:kbdkorg/assets.git" "$SITE_HOME"
 
-  mv -f "$TLDR_ARCHIVE" "$SITE_HOME/assets/"
-  find "$TLDRHOME/language_archives" -maxdepth 1 -name "*.zip" -exec mv -f {} "$SITE_HOME/assets/" \;
-  cp -f "$TLDRHOME/index.json" "$SITE_HOME/assets/"
-  find "$TLDRHOME/scripts/pdf" -maxdepth 1 -name "*.pdf" -exec mv -f {} "$SITE_HOME/assets/" \;
+  mv -f "$TLDR_ARCHIVE" "$SITE_HOME/"
+  find "$TLDRHOME/language_archives" -maxdepth 1 -name "*.zip" -exec mv -f {} "$SITE_HOME/" \;
+  cp -f "$TLDRHOME/index.json" "$SITE_HOME/"
+  find "$TLDRHOME/scripts/pdf" -maxdepth 1 -name "*.pdf" -exec mv -f {} "$SITE_HOME/" \;
 
-  cd "$SITE_HOME/assets"
+  cd "$SITE_HOME/"
   sha256sum -- index.json *.zip > tldr.sha256sums
 
   git add -A
