@@ -3,7 +3,7 @@
 > Käyttäjän lisäysapuohjelma.
 > Lisätietoja: <https://manpages.debian.org/latest/adduser/adduser.html>.
 
-- Luo uusi käyttäjä oletuskotihakemistolla ja pyydä käyttäjää asettamaan salasana:
+- Luo uusi käyttäjä oletuskotihakemistolla ja pyyydä käyttäjää asettamaan salasana:
 
 `adduser {{tunnus}}`
 
