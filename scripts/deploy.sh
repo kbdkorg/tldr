@@ -49,7 +49,7 @@ function upload_assets {
   git push -q
   echo "Assets (pages archive, index and checksums) deployed to the static site."
 
-  gh release --repo tldr-pages/tldr upload --clobber "$RELEASE_TAG" -- \
+  gh release --repo kbdkorg/tldr upload --clobber "$RELEASE_TAG" -- \
     tldr.sha256sums \
     "$TLDR_ARCHIVE" \
     "$INDEX" \
