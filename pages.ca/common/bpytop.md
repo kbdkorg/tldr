@@ -7,7 +7,7 @@
 
 `bpytop`
 
-- Inicia en mode minimalista sense recuadres de memòria y xarxes:
+- Inicia en mode minimalilsta sense recuadres de memòria y xarxes:
 
 `bpytop -m`
 
