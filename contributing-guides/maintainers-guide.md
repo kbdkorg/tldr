@@ -1,7 +1,7 @@
 # Maintainer's guide
 
 The following guidelines are meant to provide a general basis
-for the behavior expected of tldr-pages maintainers.
+for the behavior expected of tldr-pages maintainers.  
 
 > [!NOTE]
 > This text is a living standard;
