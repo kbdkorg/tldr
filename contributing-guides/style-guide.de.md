@@ -4,7 +4,7 @@
 
 ## Layout
 
- Eine Standard-`tldr`-Seite sollte dem folgenden Format entsprechen:
+ Eine Standard-`tldr`-Seite sollte dem  folgenden Format entsprechen:
 
 ```md
  # befehl
