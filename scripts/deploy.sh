@@ -33,7 +33,7 @@ function initialize {
 }
 
 function upload_assets {
-  git clone --quiet --depth 1 "git@github.com:tldr-pages/tldr-pages.github.io.git" "$SITE_HOME"
+  git clone --quiet --depth 1 "git@github.com:kbdkorg/tldr-pages.github.io.git" "$SITE_HOME"
 
   cp -f "$TLDR_ARCHIVE" "$SITE_HOME/assets/"
   find "$LANG_ARCHIVES" -maxdepth 1 -name "*.zip" -exec cp -f {} "$SITE_HOME/assets/" \;
