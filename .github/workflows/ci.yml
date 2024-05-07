@@ -52,6 +52,9 @@ jobs:
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: List
+      run: ls -la
   
     - name: Check for generated files
       id: check-files
