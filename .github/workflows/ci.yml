@@ -64,9 +64,6 @@ jobs:
         if [[ ${{ env.pdf_exists }} == 'true' ]]; then
           subject_path+="scripts/pdf/**/*.pdf "
         fi
-        if [[ ${{ env.checksums_exists }} == 'true' ]]; then
-          subject_path+="tldr.sha256sums "
-        fi
         echo "subject_path=$subject_path" >> $GITHUB_ENV
 
     - name: Attest generated files
