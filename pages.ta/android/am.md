@@ -5,7 +5,7 @@
 
 - ஒரு குறிப்பிட்ட செயல்பாட்டைத் தொடங்கவும்:
 
-`am start -n {{com.android.settings/.Settings}}`
+`am start -n {{com.android.setti ngs/.Settings}}`
 
 - ஒரு செயல்பாட்டைத் தொடங்கி, அதற்குத் தரவை அனுப்பவும்:
 
