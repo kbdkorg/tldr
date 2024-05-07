@@ -43,15 +43,9 @@ function upload_assets {
   cd "$SITE_HOME/assets"
   sha256sum -- index.json *.zip > tldr.sha256sums
 
-  # Old way of distributing assets. This needs to be deleted later.
-  git add -A
-  git commit -m "[GitHub Actions] uploaded assets after commit tldr-pages/tldr@$GITHUB_SHA"
-  git push -q
-  echo "Assets (pages archive, index and checksums) deployed to the static site."
-
   # Suppress errors from unmatched patterns if some files don't exist.
   shopt -s nullglob
-  gh release --repo tldr-pages/tldr upload --clobber "$RELEASE_TAG" -- \
+  gh release --repo kbdkorg/tldr upload --clobber "$RELEASE_TAG" -- \
     tldr.sha256sums \
     "$TLDR_ARCHIVE" \
     "$INDEX" \
