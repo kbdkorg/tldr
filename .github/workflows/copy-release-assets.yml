@@ -21,13 +21,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set tag names
+        run: |
+          echo "LATEST=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+          echo "PREVIOUS=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)" >> $GITHUB_ENV
+
       - name: Download assets
         run: |
-          LATEST="$(git describe --tags --abbrev=0)"
-          PREVIOUS="$(git describe --tags --abbrev=0 "$LATEST"^)"
-
           mkdir release-assets && cd release-assets
-
           gh release download "$PREVIOUS"
 
       - name: Construct subject-path for attest action
