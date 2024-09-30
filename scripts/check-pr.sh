@@ -215,7 +215,7 @@ MSG_PAGE_TITLE='The page `%s` has an outdated page title.\n'
 
 PLATFORMS=$(ls pages/)
 
-if [[ $CI == true && $GITHUB_REPOSITORY == "tldr-pages/tldr" && $PULL_REQUEST_ID != "" ]]; then
+if [[ $CI == true && $GITHUB_REPOSITORY == "kbdkorg/tldr" && $PULL_REQUEST_ID != "" ]]; then
   check_diff
   check_structure
 else
