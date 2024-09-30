@@ -120,7 +120,7 @@ function run_checks_pr {
 # MAIN
 ###################################
 
-if [[ $CI == true && $GITHUB_REPOSITORY == "tldr-pages/tldr" && $PULL_REQUEST_ID != "" ]]; then
+if [[ $CI == true && $GITHUB_REPOSITORY == "kbdkorg/tldr" && $PULL_REQUEST_ID != "" ]]; then
   run_checks_pr
   run_tests_pr
 else
