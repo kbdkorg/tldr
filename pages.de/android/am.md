@@ -3,10 +3,6 @@
 > Androids Aktivitäten-Manager.
 > Weitere Informationen: <https://developer.android.com/tools/adb#am>.
 
-- Starte eine bestimmte Aktivität:
-
-`am start -n {{com.android.settings/.Settings}}`
-
 - Starte eine Aktivität und übergib ihr Daten:
 
 `am start -a {{android.intent.action.VIEW}} -d {{tel:123}}`
